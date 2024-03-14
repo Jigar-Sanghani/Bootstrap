@@ -12,44 +12,75 @@
         crossorigin="anonymous"></script>
 
     <style>
-        body{
+        body {
             font-family: sans-serif;
             letter-spacing: 01px;
             word-spacing: 03px;
             margin: 0px;
             padding: 0px;
-            font-size: 17px;
+            font-size: 15px;
             text-align: center;
         }
 
-        h1{
-            margin: 2.5%;
+        h2 {
+            margin: 01%;
             color: black;
             letter-spacing: 00px;
-            padding: 0.5%;
+            text-align: center;
         }
 
-        #title{
-            background-color: rgb(250, 204, 213);
+        #title {
+            background-color: rgb(251, 216, 223);
             border-radius: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            margin: 1.5%;
+
+            img {
+                height: 10%;
+                width: 07%;
+            }
+        }
+
+        @media (max-width:500px) {
+            h2 {
+                font-size: medium;
+            }
+        }
+
+        @media (max-width:250) {
+            h2 {
+                font-size: small;
+            }
+        }
+
+        @media (max-width:150px) {
+            h2 {
+                font-size: smaller;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div id="title" >
-        <h1>----- IPL 2024 SCHEDULE -----</h1>
+    <div id="title" class="container mx-auto">
+        <img src="https://wallpaperaccess.in/public/uploads/preview/tata-ipl-2022-logo-png-images-z.png" alt="">
+        <h2>----- IPL 2024 SCHEDULE -----</h2>
+        <img src="https://wallpaperaccess.in/public/uploads/preview/tata-ipl-2022-logo-png-images-z.png" alt="">
     </div>
-    
-    <table class="table table-hover table-info table table-striped">
+
+    <table class="table table-hover table-info">
         <thead>
             <tr>
-                <th>No.</th>
-                <th>Match</th>
-                <th>Venue</th>
-                <th>Date</th>
-                <th>Time</th>
+                <th class="table-success">No.</th>
+                <th class="table-success">Match</th>
+                <th class="table-success">Venue</th>
+                <th class="table-success">Date</th>
+                <th class="table-success">Time</th>
             </tr>
         </thead>
 
