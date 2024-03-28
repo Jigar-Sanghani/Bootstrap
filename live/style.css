@@ -1,28 +1,33 @@
-*
-{
-    font-size: 18px;
+* {
+    font-size: 17px;
 }
 
-.navigation{
+.navigation {
     height: 70px;
+    width: 100%;
     background-color: black;
+    position: fixed;
 }
 
-.input{
-    width: 70% !important;
+.input {
+    width: 75% !important;
     background-color: black !important;
 }
 
-.search{
+.search {
     width: 40%;
 }
 
-.icons{
+.icons {
     width: 10%;
 }
 
-.button{
+.button {
     width: 20%;
     background-color: white !important;
     color: black !important;
+}
+
+input::placeholder {
+    color: white !important;
 }
