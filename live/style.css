@@ -1,0 +1,28 @@
+*
+{
+    font-size: 18px;
+}
+
+.navigation{
+    height: 70px;
+    background-color: black;
+}
+
+.input{
+    width: 70% !important;
+    background-color: black !important;
+}
+
+.search{
+    width: 40%;
+}
+
+.icons{
+    width: 10%;
+}
+
+.button{
+    width: 20%;
+    background-color: white !important;
+    color: black !important;
+}
