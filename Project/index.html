@@ -40,6 +40,42 @@
 
     <div id="section1">
 
+        <div id="sub">
+        </div>
+
+        <div id="sub-section1">
+
+            <div id="e-commerce">
+                <i class="fas fa-fire"></i>
+                <p class="fs-4 mx-3">eCommerce</p>
+            </div>
+
+            <h1 class="title">eTrade Multipurpose eCommerce Next JS Template</h1>
+
+            <div class="main">
+                <div class="co">
+                    <p>Demo <br>Website</p>
+                    <div class="counter" data-speed="1000">5</div>
+                </div>
+                <div class="co">
+                    <p>Inner Page</p>
+                    <div class="counter" data-speed="1300">25</div>
+                </div>
+                <div class="co">
+                    <p>Elements</p>
+                    <div class="counter" data-speed="1300">30</div>
+                </div>
+            </div>
+
+            <div class="powered">
+                <p>Powered By</p>
+                <img src="https://etrade-delta.vercel.app/_next/image?url=%2Fimages%2Fpreview%2Fnext.png&w=64&q=75" class="img-fluid" alt="">
+                <img src="https://etrade-delta.vercel.app/_next/image?url=%2Fimages%2Fpreview%2Freact.png&w=64&q=75" class="img-fluid"  alt="">
+                <img src="https://etrade-delta.vercel.app/_next/image?url=%2Fimages%2Fpreview%2Fnpm.png&w=64&q=75"  class="img-fluid" alt="">
+                <img src="https://etrade-delta.vercel.app/_next/image?url=%2Fimages%2Fpreview%2Fscss.png&w=64&q=75" class="img-fluid"  alt="">
+                <img src="https://etrade-delta.vercel.app/_next/image?url=%2Fimages%2Fpreview%2Fbootstrap.png&w=64&q=75"  class="img-fluid" alt="">
+            </div>
+        </div>
     </div>
 
     <div id="section2">
@@ -54,5 +90,35 @@
 
     </div>
 </body>
+
+
+<script>
+    (() => {
+        const counter = document.querySelectorAll('.counter');
+        // covert to array
+        const array = Array.from(counter);
+        // select array element
+        array.map((item) => {
+            // data layer
+            let counterInnerText = item.textContent;
+
+            let count = 1;
+            let speed = item.dataset.speed / counterInnerText
+            function counterUp() {
+                item.textContent = count++
+                if (counterInnerText < count) {
+                    clearInterval(stop);
+                }
+            }
+            const stop = setInterval(() => {
+                counterUp();
+            }, speed);
+        })
+    })()
+
+
+
+
+</script>
 
 </html>

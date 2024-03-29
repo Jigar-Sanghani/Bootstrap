@@ -1,4 +1,4 @@
-#navbar{
+#navbar {
     width: 100%;
     height: 70px;
     display: flex;
@@ -7,26 +7,30 @@
     background-color: white;
 }
 
-#logo{   
-    margin-left: 02%;                       
+#logo {
+    margin-left: 02%;
 }
 
-#middle{
+#middle {
     display: flex;
     justify-content: space-between;
 
-    a{
+    a {
         text-decoration: none;
     }
-}   
+}
 
-#icons{
+#icons {
     margin-right: 02%;
     width: 10%;
     display: flex;
     justify-content: space-between;
 
-    a{
+    a {
         color: black;
     }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
