@@ -245,6 +245,7 @@
     display: none;
     font-size: 20px;
     transition: all .3s ease-in-out;
+    opacity: 100% !important;
 }
 
 .demo:hover {
@@ -457,6 +458,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
     }
 }
 
