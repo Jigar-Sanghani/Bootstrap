@@ -194,7 +194,7 @@
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    background-color: black;
+    background-color:#f6f7fb;
     font-size: 20px;
     text-align: center;
 }
@@ -288,7 +288,7 @@
 
 #section3 {
     width: 100%;
-    background-color: black;
+    background-color: white;
     text-align: center;
     font-size: 20px;
 }
@@ -457,9 +457,6 @@
         background-image: url("https://new.axilthemes.com/demo/template/etrade/assets/images/preview/cta-mockup.png");
         background-repeat: no-repeat;
         background-size: contain;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
     }
 }
 
