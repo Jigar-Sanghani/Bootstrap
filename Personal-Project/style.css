@@ -46,6 +46,11 @@
 
 #logo {
     margin-left: 02%;
+    transition: all 01s;
+}
+
+#logo:hover{
+    transform: scale(1.1);
 }
 
 #toggle {
@@ -53,7 +58,7 @@
 }
 
 #enner-nav {
-    width: 40%;
+    width: 40% !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,7 +88,7 @@
     background-color: rgb(86, 86, 254);
     display: flex;
     width: 11%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     transition: all 0.4s;
 
@@ -118,7 +123,7 @@
     width: 60%;
     height: 100%;
     position: relative;
-    left: 40%;
+    left: 45%;
     top: 25%;
 }
 
@@ -127,7 +132,7 @@
     height: 60%;
     position: absolute;
     left: 07%;
-    top: 35%;
+    top: 22%;
 
     h1 {
         line-height: 1.3;
@@ -185,6 +190,11 @@
         cursor: pointer;
         width: 35px;
         height: 35px;
+        transition: all 0.2s;
+    }
+
+    img:hover{
+        transform: scale(1.3);
     }
 }
 
@@ -298,7 +308,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 05%; */
+    margin-top: 05%;
 
     p {
         margin-top: 01%;
@@ -449,15 +459,6 @@
         top: 05%;
         margin-top: 03%;
     }
-
-    .img {
-        margin-top: 05%;
-        width: 100%;
-        height: 600px;
-        background-image: url("https://new.axilthemes.com/demo/template/etrade/assets/images/preview/cta-mockup.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
 }
 
 .ready {
@@ -474,4 +475,12 @@
 }
 #section2{
     width: 100.8% !important;
+}
+
+.many{
+    
+    img{
+        width: 75%;
+        margin-top: 05%;
+    }
 }
