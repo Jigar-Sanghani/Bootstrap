@@ -213,11 +213,6 @@
     text-align: center;
 }
 
-#black{
-    background-color: black;
-    /* opacity: 0.2; */
-}
-
 .Home-Pages {
     color: #ff497c;
     display: flex;
@@ -268,8 +263,6 @@
 
 .box:hover .demo {
     display: block;
-
-    opacity: 0.2 !important;
 }
 
 .box-1 {
