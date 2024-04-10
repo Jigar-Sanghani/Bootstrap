@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart</title>
+    <link rel="shortcut icon" href="/Exam-2/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas id="graph"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+</body>
+
+<script>const graph = document.getElementById("graph").getContext("2d");
+
+    Chart.defaults.global.defaultFontSize = 18;
+    
+    let massPopChart = new Chart(graph, {
+      type: "pie", // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+      data: {
+        labels: [
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022 ",
+          "2023",
+          "2024",
+        ],
+        datasets: [
+          {
+            label: "Population en M ",
+            data: [9, 8, 6, 2, 6, 10, 12, 6],
+            // backgroundColor: "blue",
+            backgroundColor: [
+              "red",
+              "orange",
+              "salmon",
+              "blue",
+              "yellow",
+              "purple",
+              "green",
+              "tomato",
+            ],
+            hoverBorderWidth: 3,
+          },
+        ],
+      },
+      options: {
+        title: {
+          display: true,
+          text: "McDonald In India",
+          fontSize: 28,
+        },
+        legend: {
+          display: true,
+        },
+        // start at 0
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+              },
+            },
+          ],
+        },
+        layout: {
+          padding: {
+            left: 100,
+            right: 100,
+            top: 50,
+          },
+        },
+      },
+    });</script>
+</html>

@@ -1,5 +1,175 @@
-.navbar{
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s;
+    user-select: none;
+}
+
+
+
+.navbar {
     width: 100%;
     height: 80px;
+    position: fixed !important;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.middle {
+    width: 60%;
+    height: 80px;
+
+    a {
+        color: black !important;
+        font-size: 18px;
+        text-transform: initial;
+        font-weight: 400;
+    }
+
+    a:hover {
+        transform: scale(1.05);
+        color: #db0007 !important;
+    }
+}
+
+.section1 {
+    width: 100%;
+}
+
+.sub {
+    width: 40%;
+    height: auto;
+    background-color: #fcb900;
+
+    h1 {
+        margin-top: 35%;
+        margin-left: 10%;
+        font-size: 60px;
+        color: #db0007;
+    }
+
+    .shadow-text {
+        color: transparent;
+        -webkit-text-stroke-color: #db0007;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+
+.sub-section1 {
+    width: 60%;
+    height: 1000px;
+    background-color: #fcb900;
+    background-image: url("https://mcdindia.com/wp-content/uploads/2024/04/value99-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2 {
+    width: 100%;
+    height:700px;
+    background-color: white;
+}
+
+.write {
+
+    width: 60%;
+    height: 80px;
+
+    h1 {
+        font-size: 25px;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: black;
+    }
+
+    a:hover{
+        color: #B69A81;
+    }
+}
+
+.sub-section2{
+    width: 60%;
+    height: 400px;  
+
+    .box{
+        width: 80%;
+        height: 60px;
+        border-radius: 0px 0px 70px 0px;
+        background-color: #fcb900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            font-size: 30px;
+
+        }
+    }
+}
+
+.circle{
+    width: 50%;
+    height: 125px;
+    background-color: red;
+    border-radius: 100px;
+    margin-left: 05%;
+}
+
+.img-1{
+    width: 150px;
+    height: 30px;
+}
+
+.section3{
+    background-image: url("https://mcdindia.com/wp-content/uploads/2020/05/bg-happy-meal-app2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.sub3{
+    width: 35%;
+    height: 600px;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-section3{
+    width: 65%;
+    height: 600px;
+    background-color: rgb(255, 115, 0);
+}
+
+.upper{
+    width: 100%;
+    height: 300px;
+    background-color: #db0007;
+}
+
+.lower{
+    width: 100%;
+    height: 300px;
+    background-color:black;
+}
+
+.boxa{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(55, 0, 255);
+    border: 01px solid black;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+}
+
+.img-s{
+    width: 200px;
+    height: 40px;
 }
